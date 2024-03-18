@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:background="@color/anasayfaarkaplan"
+    android:layout_height="match_parent"
+    tools:context=".SarkiCalmaEkrani">
+
+    <ToggleButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/loopfalse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintEnd_toStartOf="@id/solbuton"
+        android:textOff=""
+        android:textOn=""
+        android:id="@+id/loop"/>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/solbuton"
+        app:layout_constraintStart_toEndOf="@id/loop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/play"
+        android:background="@drawable/sol"
+        android:layout_marginBottom="60dp"/>
+    <ToggleButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/baseline_play_circle_filled_24"
+        app:layout_constraintStart_toEndOf="@id/solbuton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sagbuton"
+        android:layout_marginBottom="40dp"
+        android:textOn=""
+        android:textOff=""
+        android:id="@+id/play"/>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/sagbuton"
+        app:layout_constraintStart_toEndOf="@id/play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/sag"
+        app:layout_constraintEnd_toStartOf="@id/begen"
+        android:layout_marginBottom="60dp"
+        />
+    <ToggleButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/heartfalse"
+        app:layout_constraintStart_toEndOf="@id/sagbuton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="70dp"
+        android:textOn=""
+        android:textOff=""
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/begen"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/play"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/seekbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:id="@+id/deger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:text="1312"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

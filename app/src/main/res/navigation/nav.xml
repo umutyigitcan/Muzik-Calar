@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/uygulamaButun">
+
+    <fragment
+        android:id="@+id/uygulamaButun"
+        android:name="com.example.musiccalar.UygulamaButun"
+        android:label="fragment_uygulama_butun"
+        tools:layout="@layout/fragment_uygulama_butun" />
+</navigation>
